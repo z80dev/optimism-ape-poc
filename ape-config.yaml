@@ -1,0 +1,21 @@
+name: optest
+
+plugins:
+  - name: solidity
+  - name: etherscan
+  - name: infura
+  - name: optimism
+  - name: ens
+  - name: vyper
+
+optimism:
+  mainnet:
+    transaction_acceptance_timeout: 180
+
+hardhat:
+  fork_request_timeout: 600
+  fork:
+    optimism:
+      mainnet:
+        upstream_provider: infura
+        enable_hardhat_deployments: true
