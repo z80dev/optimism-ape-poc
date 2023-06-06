@@ -4,4 +4,4 @@ counter: public(uint256)
 # external function to increment the counter
 @external
 def increment():
-    self.counter += 1
+    assert self.counter != 0

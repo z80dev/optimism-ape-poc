@@ -12,6 +12,7 @@ optimism:
   mainnet:
     transaction_acceptance_timeout: 180
 
+
 hardhat:
   fork_request_timeout: 600
   fork:
